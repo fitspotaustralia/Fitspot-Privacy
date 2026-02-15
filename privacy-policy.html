@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitspot - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF6B35;
+            --primary-dark: #E55A2B;
+            --secondary: #004E89;
+            --text-dark: #1A1A1A;
+            --text-medium: #4A4A4A;
+            --text-light: #6B6B6B;
+            --bg-light: #FAFAFA;
+            --bg-white: #FFFFFF;
+            --border: #E0E0E0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-dark);
+            background: var(--bg-light);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #003D6B 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.4;
+        }
+
+        .header-content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .last-updated {
+            background: var(--bg-white);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 3rem;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .last-updated strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .section {
+            background: var(--bg-white);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            font-weight: 700;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 1.25rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            color: var(--text-dark);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-medium);
+            font-size: 1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.75rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: var(--text-medium);
+        }
+
+        li strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: #FFF8F5;
+            border: 2px solid #FFE5DC;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--primary-dark);
+            margin-top: 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            border: 1px solid #BAE6FD;
+        }
+
+        .contact-box h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+
+        .contact-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .contact-link:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 3rem 1.5rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            .section {
+                padding: 1.75rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">Fitspot</div>
+            <div class="tagline">Your Fitness Journey, Our Commitment to Your Privacy</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="last-updated">
+            <strong>Last Updated:</strong> February 15, 2026
+        </div>
+
+        <div class="section">
+            <h1>Privacy Policy</h1>
+            <p>
+                Welcome to Fitspot! We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your data when you use our fitness and wellness application.
+            </p>
+            <p>
+                By using Fitspot, you agree to the collection and use of information in accordance with this policy.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Information We Collect</h2>
+            
+            <h3>1. Personal Information</h3>
+            <p>When you create an account with Fitspot using Google Sign-In, we collect:</p>
+            <ul>
+                <li><strong>Name:</strong> Your display name from your Google account</li>
+                <li><strong>Email Address:</strong> Your Google account email address</li>
+                <li><strong>Profile Photo:</strong> Your Google account profile picture (optional)</li>
+                <li><strong>Phone Number:</strong> If you choose to provide it (optional)</li>
+                <li><strong>User ID:</strong> A unique identifier created by our authentication system</li>
+            </ul>
+
+            <h3>2. Health & Fitness Information</h3>
+            <p>You may choose to provide the following fitness-related data:</p>
+            <ul>
+                <li><strong>Body Measurements:</strong> Weight, height, body fat percentage, chest, waist, hips, arms, and thigh measurements</li>
+                <li><strong>Fitness Goals:</strong> Your personal fitness objectives and preferences</li>
+                <li><strong>Fitness Level:</strong> Beginner, intermediate, or advanced classification</li>
+                <li><strong>Progress Notes:</strong> Personal notes about your fitness journey</li>
+            </ul>
+
+            <h3>3. Activity Information</h3>
+            <p>We automatically collect information about how you use the app:</p>
+            <ul>
+                <li><strong>Class Bookings:</strong> Classes you book, attend, or cancel</li>
+                <li><strong>Video Views:</strong> Workout videos you watch and your viewing history</li>
+                <li><strong>Login Activity:</strong> Dates and times of your app usage</li>
+                <li><strong>App Interactions:</strong> Features you use and content you access</li>
+            </ul>
+
+            <h3>4. Information We Do NOT Collect</h3>
+            <ul>
+                <li>We do NOT collect data for advertising purposes</li>
+                <li>We do NOT collect data for third-party analytics</li>
+                <li>We do NOT collect precise location data</li>
+                <li>We do NOT collect payment information (if applicable)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>How We Use Your Information</h2>
+            <p>We use your information solely for the following purposes:</p>
+            <ul>
+                <li><strong>Account Management:</strong> To create and manage your Fitspot account</li>
+                <li><strong>App Functionality:</strong> To provide core features like class bookings, workout tracking, and progress monitoring</li>
+                <li><strong>Personalization:</strong> To customize your fitness experience based on your goals and preferences</li>
+                <li><strong>Communication:</strong> To send you class reminders, booking confirmations, and important app updates (based on your notification preferences)</li>
+                <li><strong>Support:</strong> To respond to your inquiries and provide customer support</li>
+                <li><strong>Improvement:</strong> To improve our app features and user experience</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>We Do NOT:</h3>
+                <ul style="margin-bottom: 0;">
+                    <li>Sell your personal information to third parties</li>
+                    <li>Use your data for advertising purposes</li>
+                    <li>Share your health information with anyone without your consent</li>
+                    <li>Track you across other websites or apps</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>How We Store and Protect Your Data</h2>
+            
+            <h3>Data Storage</h3>
+            <p>Your data is securely stored using Google Firebase and Cloud Firestore, industry-leading cloud platforms that provide:</p>
+            <ul>
+                <li><strong>Encryption in Transit:</strong> All data transmitted between your device and our servers is encrypted using HTTPS/TLS protocols</li>
+                <li><strong>Encryption at Rest:</strong> All data stored on our servers is encrypted using AES-256 encryption</li>
+                <li><strong>Secure Infrastructure:</strong> We use Google Cloud's secure, certified data centers</li>
+            </ul>
+
+            <h3>Data Access</h3>
+            <p>Access to your personal data is restricted to:</p>
+            <ul>
+                <li>You, through your authenticated account</li>
+                <li>Authorized Fitspot administrators, only when necessary for support or technical purposes</li>
+                <li>Automated systems for app functionality</li>
+            </ul>
+
+            <h3>Data Retention</h3>
+            <p>We retain your data for as long as your account is active. If you delete your account, your data will be permanently removed within 30 days.</p>
+        </div>
+
+        <div class="section">
+            <h2>Third-Party Services</h2>
+            <p>Fitspot uses the following third-party services:</p>
+            <ul>
+                <li><strong>Google Sign-In:</strong> For secure authentication (governed by Google's Privacy Policy)</li>
+                <li><strong>Firebase/Cloud Firestore:</strong> For secure data storage and authentication</li>
+                <li><strong>YouTube:</strong> For embedded workout video content (subject to YouTube's Privacy Policy)</li>
+            </ul>
+            <p>
+                These services may collect information as described in their respective privacy policies. We do not control these third-party services and are not responsible for their privacy practices.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Your Rights and Choices</h2>
+            
+            <h3>Access Your Data</h3>
+            <p>You can view and update your personal information at any time through your Fitspot account settings.</p>
+
+            <h3>Control Your Notifications</h3>
+            <p>You can manage notification preferences in the app settings to control:</p>
+            <ul>
+                <li>New content notifications</li>
+                <li>Class reminders</li>
+                <li>Promotional messages</li>
+            </ul>
+
+            <h3>Delete Your Data</h3>
+            <p>You have the right to request deletion of your account and all associated data. You can do this by:</p>
+            <ul>
+                <li><strong>In-App:</strong> Go to Settings → Account → Delete Account</li>
+                <li><strong>Email:</strong> Contact us at <a href="mailto:support@fitspot.com" class="contact-link">support@fitspot.com</a> with the subject "Delete My Account"</li>
+                <li><strong>Web Form:</strong> Submit a deletion request through our <a href="#" class="contact-link">Account Deletion Form</a></li>
+            </ul>
+            <p>Upon receiving your deletion request, we will permanently delete your data within 30 days.</p>
+
+            <h3>Export Your Data</h3>
+            <p>You can request a copy of your personal data by contacting us at <a href="mailto:support@fitspot.com" class="contact-link">support@fitspot.com</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Children's Privacy</h2>
+            <p>
+                Fitspot is not intended for users under the age of 18. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us immediately, and we will delete such information.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. We will notify you of any material changes by:
+            </p>
+            <ul>
+                <li>Posting the updated policy in the app</li>
+                <li>Updating the "Last Updated" date at the top of this page</li>
+                <li>Sending you an in-app notification or email (for significant changes)</li>
+            </ul>
+            <p>
+                Your continued use of Fitspot after any changes indicates your acceptance of the updated Privacy Policy.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>International Users</h2>
+            <p>
+                Fitspot is operated from Australia. If you are accessing our app from outside Australia, please be aware that your information may be transferred to, stored, and processed in Australia or other countries where our service providers operate. By using Fitspot, you consent to such transfer and processing.
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="contact-box">
+                <h3>Contact Us</h3>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:support@fitspot.com" class="contact-link">support@fitspot.com</a><br>
+                    <strong>App:</strong> Fitspot → Settings → Help & Support<br>
+                    <strong>Developer:</strong> Fitspot Pty Ltd<br>
+                    <strong>Location:</strong> Perth, Western Australia, Australia
+                </p>
+                <p style="margin-bottom: 0;">
+                    We will respond to your inquiry within 5-7 business days.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Fitspot. All rights reserved.
+    </div>
+</body>
+</html>
