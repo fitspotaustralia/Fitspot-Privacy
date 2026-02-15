@@ -262,8 +262,8 @@
             <ul>
                 <li><strong>Name:</strong> Your display name from your Google account</li>
                 <li><strong>Email Address:</strong> Your Google account email address</li>
-                <li><strong>Profile Photo:</strong> Your Google account profile picture (optional)</li>
-                <li><strong>Phone Number:</strong> If you choose to provide it (optional)</li>
+                <li><strong>Profile Photo:</strong> Your Google account profile picture</li>
+                <li><strong>Phone Number:</strong> If you choose to provide it</li>
                 <li><strong>User ID:</strong> A unique identifier created by our authentication system</li>
             </ul>
 
@@ -341,15 +341,84 @@
         </div>
 
         <div class="section">
-            <h2>Third-Party Services</h2>
-            <p>Fitspot uses the following third-party services:</p>
+            <h2>Third-Party Services and SDKs</h2>
+            <p>Fitspot uses the following third-party services and Software Development Kits (SDKs) to provide and improve our app functionality:</p>
+            
+            <h3>1. Google Firebase Services</h3>
+            <p>We use several Firebase services provided by Google LLC:</p>
             <ul>
-                <li><strong>Google Sign-In:</strong> For secure authentication (governed by Google's Privacy Policy)</li>
-                <li><strong>Firebase/Cloud Firestore:</strong> For secure data storage and authentication</li>
-                <li><strong>YouTube:</strong> For embedded workout video content (subject to YouTube's Privacy Policy)</li>
+                <li>
+                    <strong>Firebase Authentication:</strong> For secure user authentication via Google Sign-In
+                    <br><em>Data collected: Email address, user ID, authentication tokens</em>
+                </li>
+                <li>
+                    <strong>Cloud Firestore:</strong> For secure data storage
+                    <br><em>Data collected: Only the data you provide (as described in this policy)</em>
+                </li>
+                <li>
+                    <strong>Firebase Analytics:</strong> For understanding app usage and improving user experience
+                    <br><em>Data collected: App interactions, device information (model, OS version), general location (country/city level), crash data, session duration</em>
+                    <br><em>Purpose: App performance monitoring, feature usage analysis, crash detection</em>
+                </li>
+                <li>
+                    <strong>Firebase Crashlytics:</strong> For detecting and fixing app crashes
+                    <br><em>Data collected: Crash logs, device state at time of crash, device identifiers, app version</em>
+                    <br><em>Purpose: Identifying and fixing bugs to improve app stability</em>
+                </li>
+                <li>
+                    <strong>Firebase Cloud Messaging (FCM):</strong> For sending push notifications
+                    <br><em>Data collected: Device tokens, notification interaction data</em>
+                    <br><em>Purpose: Delivering class reminders, new content alerts, and important updates</em>
+                </li>
+                <li>
+                    <strong>Firebase Storage:</strong> For storing and serving media files
+                    <br><em>Data collected: Uploaded files (if any), access metadata</em>
+                    <br><em>Purpose: Storing profile photos and app content</em>
+                </li>
             </ul>
             <p>
-                These services may collect information as described in their respective privacy policies. We do not control these third-party services and are not responsible for their privacy practices.
+                <strong>Firebase Privacy:</strong> Firebase services are governed by Google's Privacy Policy. 
+                Firebase Analytics data is used solely for improving our app and is not shared with third parties for advertising. 
+                Learn more: <a href="https://firebase.google.com/support/privacy" class="contact-link" target="_blank">Firebase Privacy and Security</a>
+            </p>
+
+            <h3>2. Google Sign-In</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Secure OAuth authentication</li>
+                <li><strong>Data collected:</strong> Name, email, profile photo (with your permission)</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" class="contact-link" target="_blank">Google Privacy Policy</a></li>
+            </ul>
+
+            <h3>3. YouTube Player SDK</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Embedding and playing workout video content</li>
+                <li><strong>Data collected:</strong> Video viewing behavior, device information (collected by YouTube)</li>
+                <li><strong>Note:</strong> When you watch videos in Fitspot, YouTube may collect data according to their privacy policy</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" class="contact-link" target="_blank">YouTube Privacy Policy</a></li>
+            </ul>
+
+            <h3>4. Data Collected by Third-Party SDKs</h3>
+            <p>The third-party SDKs integrated into Fitspot may automatically collect:</p>
+            <ul>
+                <li><strong>Device Information:</strong> Device model, operating system version, device identifiers</li>
+                <li><strong>App Usage Data:</strong> Features used, session duration, screen views</li>
+                <li><strong>Performance Data:</strong> App crashes, errors, loading times</li>
+                <li><strong>Network Information:</strong> IP address (for general location, not precise), network type</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>Important Notes About Third-Party Data Collection:</h3>
+                <ul style="margin-bottom: 0;">
+                    <li>Firebase Analytics data is used <strong>only for app improvement</strong>, not for advertising</li>
+                    <li>We do not sell or share your data with third parties for marketing purposes</li>
+                    <li>Crash and analytics data is anonymized when possible</li>
+                    <li>You can opt out of analytics tracking in your device settings (iOS: Settings → Privacy → Analytics; Android: Settings → Google → Ads)</li>
+                </ul>
+            </div>
+
+            <p>
+                <strong>Third-Party Responsibility:</strong> We do not control how these third-party services process data. 
+                Each service operates according to its own privacy policy. We encourage you to review their policies through the links provided above.
             </p>
         </div>
 
@@ -371,14 +440,12 @@
             <p>You have the right to request deletion of your account and all associated data. You can do this by:</p>
             <ul>
                 <li><strong>In-App:</strong> Go to Settings → Account → Delete Account</li>
-                <li><strong>Email:</strong> Contact us at <a href="mailto:support@fitspot.com" class="contact-link">support@fitspot.com</a> with the subject "Delete My Account"</li>
-                <li><strong>Web Form:</strong> Submit a deletion request through our <a href="#" class="contact-link">Account Deletion Form</a></li>
+<li><strong>Email:</strong> Contact us at <a href="mailto:fitspotaustralia@gmail.com" class="contact-link">support@fitspot.com</a> with the subject "Delete My Account"</li>                <li><strong>Web Form:</strong> Submit a deletion request through our <a href="https://forms.gle/ZTowrhwTzw9ahyLA6" class="contact-link">Account Deletion Form</a></li>
             </ul>
             <p>Upon receiving your deletion request, we will permanently delete your data within 30 days.</p>
 
             <h3>Export Your Data</h3>
-            <p>You can request a copy of your personal data by contacting us at <a href="mailto:support@fitspot.com" class="contact-link">support@fitspot.com</a>.</p>
-        </div>
+<p>You can request a copy of your personal data by contacting us at <a href="mailto:fitspotaustralia@gmail.com" class="contact-link">support@fitspot.com</a>.</p>        </div>
 
         <div class="section">
             <h2>Children's Privacy</h2>
@@ -405,7 +472,7 @@
         <div class="section">
             <h2>International Users</h2>
             <p>
-                Fitspot is operated from Australia. If you are accessing our app from outside Australia, please be aware that your information may be transferred to, stored, and processed in Australia or other countries where our service providers operate. By using Fitspot, you consent to such transfer and processing.
+                Fitspot is operated from Australia and cater to Australian Users. If you are accessing our app from outside Australia, please be aware that your information may be transferred to, stored, and processed in Australia or other countries where our service providers operate. By using Fitspot, you consent to such transfer and processing.
             </p>
         </div>
 
@@ -414,20 +481,6 @@
                 <h3>Contact Us</h3>
                 <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
                 <p>
-                    <strong>Email:</strong> <a href="mailto:support@fitspot.com" class="contact-link">support@fitspot.com</a><br>
+                    <strong>Email:</strong> <a href="mailto:fitspotaustralia@gmail.com" class="contact-link">support@fitspot.com</a><br>
                     <strong>App:</strong> Fitspot → Settings → Help & Support<br>
-                    <strong>Developer:</strong> Fitspot Pty Ltd<br>
-                    <strong>Location:</strong> Perth, Western Australia, Australia
-                </p>
-                <p style="margin-bottom: 0;">
-                    We will respond to your inquiry within 5-7 business days.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        © 2026 Fitspot. All rights reserved.
-    </div>
-</body>
-</html>
+                    <strong>Developer:</strong> Fitspot
